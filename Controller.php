@@ -26,4 +26,9 @@ class Controller extends BaseController {
 	{
 		throw new RuntimeException('Проба!');
 	}
+
+	public function event_AfterStartCore($params, $core, &$hook)
+	{
+
+	}
 }
