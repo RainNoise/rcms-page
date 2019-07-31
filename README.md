@@ -6,3 +6,6 @@ Page - module for rainnoise-cms
 
 В базе данных должна существовать таблица со столбцами id и text.  
 Поскольку модуль в зачаточном состоянии, писать документацию смысла пока нет
+
+
+https://github.com/RainNoise/rainnoise-cms/
