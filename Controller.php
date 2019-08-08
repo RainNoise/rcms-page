@@ -3,7 +3,7 @@ namespace Modules\Page;
 
 use \App\Controller as BaseController;
 use App\Core;
-use http\Exception\RuntimeException;
+use RuntimeException;
 use ReflectionException;
 
 
@@ -19,7 +19,7 @@ class Controller extends BaseController {
 
 	public function action_index($params) {
 		$page = PageModel::find((int)$params['id']);
-		echo $page->text;
+		echo $this->Decorate($page, $params['view'] ?: 'item');
 	}
 
 	public function action_view()
